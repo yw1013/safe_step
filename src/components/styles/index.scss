@@ -1,0 +1,165 @@
+@import "normalize";
+@import "skeleton";
+
+@import "variables";
+
+// basics
+
+body {
+  background-color: $grey-lightest;
+}
+
+img {
+	display: block;
+	width: 100%;
+	height: auto;
+}
+
+// typography
+
+.lead {
+	margin-top: 0;
+	margin-bottom: 2rem;
+	font-size: 1.8rem;
+	line-height: 1.5;
+}
+
+h2.lead {
+	font-weight: 300;
+}
+
+h5 {
+	font-weight: 600;
+}
+
+.title {
+	font-weight: 600;
+	margin-bottom: 0;
+	// margin-top: 2rem;
+}
+
+.textCenter {
+	text-align: center;
+}
+
+// layout
+
+.container {
+	background-color: $white;
+	border: 1px solid $grey-light;
+	box-shadow: 0 2px 3px 0 rgba(0,0,0,0.05);
+	padding: 2rem;
+}
+
+.card {
+	background-color: $grey-lightest;
+	border: 1px solid $grey-light;
+	box-shadow: 0 2px 3px 0 rgba(0,0,0,0.05);
+	margin-bottom: 2rem;
+}
+
+.titlebar {
+	background-color: $white;
+	border: 1px solid $grey-light;
+	box-shadow: 0 2px 3px 0 rgba(0,0,0,0.05);
+	padding: 0 2rem;
+
+	input {
+		width: 100%;
+	}
+
+	.button {
+		margin-top: 29px;
+		float: right;
+	}
+}
+
+.steps {
+	height: 100%;
+	min-width: 550px;
+	position: fixed;
+	overflow: scroll;
+	background-color: $grey-light;
+	box-shadow: 0 2px 3px 0 rgba(0,0,0,0.05);
+
+	.card {
+		padding: 2rem;
+		margin: 2rem;
+	}
+
+	li {
+		list-style: none;
+		border-top: 1px solid $grey-light;
+		white-space: nowrap;
+		overflow: hidden;
+		background-color: $white;
+	}
+
+	li:hover {
+		cursor: pointer;
+		background-color: $cyan-light;
+	}
+
+}
+
+.editor {
+	margin-left: 550px;
+	padding: 0 2rem;
+
+	.title {
+		padding: 2rem 0;
+	}
+
+	h5 {
+		margin-bottom: 0;
+	}
+
+	input {
+		width: 100%;
+	}
+
+	li {
+		list-style: none;
+	}
+}
+
+// scenario screens
+
+.scene {
+	margin-bottom: 2rem;
+}
+
+.choices {
+	text-align: center;
+
+	button {
+		margin-left: 1rem;
+		margin-right: 1rem;
+	}
+}
+
+// training module
+
+.training {
+
+	li {
+		list-style-position: outside;
+		margin-left: 2rem;
+	}
+
+	.purple {
+		color: $purple;
+	}
+
+	.indent {
+		margin-left: 2rem;
+	}
+
+	.signs {
+		font-size: 0.8em;
+
+		p, li {
+			margin-bottom: 0;
+		}
+	}
+}
